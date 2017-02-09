@@ -1,0 +1,247 @@
+1) Files that were altered from the original installed file:
+
+a) /renegades/wp-content/themes/swift-basic/header.php:
+added line 59 to add skip link to content... changed:
+<div id="header-container">
+	<header id="header" class="clearfix">
+	<?php swift_header() ?>
+	</header>
+</div>
+
+to:
+<div id="header-container">
+	<header id="header" class="clearfix">
+	<a href="#content" style="float:right;color:#000000;font-size:10%;">Skip to content</a>
+	<?php swift_header() ?>
+	</header>
+</div>
+
+a-1) Also in header.php changed
+
+<meta name="viewport" content="width=device-width">
+
+to 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+This fixed page width problems on mobile devices
+
+b) /renegades/wp-content/themes/swift-basic/sidebar.php
+change line 4 to add complimentary role... changed:
+<?php
+GLOBAL $swift_design_options;
+if( isset( $swift_design_options['sb_position'] ) && $swift_design_options['sb_position'] != 'centered' ):
+?>	<div id="sidebar-container">
+
+to:
+
+<?php
+GLOBAL $swift_design_options;
+if( isset( $swift_design_options['sb_position'] ) && $swift_design_options['sb_position'] != 'centered' ):
+?>	<div id="sidebar-container" role="complementary">
+
+c) /renegades/wp-content/themes/swift-basic/functions.php
+
+Add the following to the end of the file (before '?>') to allow a password to timeout with the session:
+
+add_action( 'wp', 'post_pw_sess_expire' );
+    function post_pw_sess_expire() {
+    if ( isset( $_COOKIE['wp-postpass_' . COOKIEHASH] ) )
+    // Setting a time of 0 in setcookie() forces the cookie to expire with the session
+    setcookie('wp-postpass_' . COOKIEHASH, '', 0, COOKIEPATH);
+}
+
+d) /renegades/wp-includes/default-widgets.php
+i) in search widget... added line 206 to add <h2> ... changed:
+	function widget( $args, $instance ) {
+		extract($args);
+		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
+
+		echo $before_widget;
+		if ( $title )
+			echo $before_title . $title . $after_title;
+
+		// Use current theme search form if it exists
+		get_search_form();
+
+		echo $after_widget;
+	}
+
+to:
+	function widget( $args, $instance ) {
+		extract($args);
+		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
+
+		echo $before_widget;
+		if ( $title )
+			echo $before_title . $title . $after_title;
+
+		// Use current theme search form if it exists
+		echo "<h2 style='font-size:20%;color:#FFFFFF;'>search this site</h2>";
+		get_search_form();
+
+		echo $after_widget;
+	}
+
+ii) in Archive widget, changed line 248 ... changed to add <h4></h4>:
+	function widget( $args, $instance ) {
+		extract($args);
+		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
+
+		echo $before_widget;
+		if ( $title )
+			echo $before_title . $title . $after_title;
+
+		// Use current theme search form if it exists
+		get_search_form();
+
+		echo $after_widget;
+	}
+
+to:
+	function widget( $args, $instance ) {
+		extract($args);
+		$c = ! empty( $instance['count'] ) ? '1' : '0';
+		$d = ! empty( $instance['dropdown'] ) ? '1' : '0';
+		$title = apply_filters('widget_title', empty($instance['title']) ? __('Archives') : $instance['title'], $instance, $this->id_base);
+
+		echo $before_widget;
+		if ( $title )
+			echo "<h4>" . $before_title . $title . $after_title . "</h4>";
+
+		if ( $d ) {
+?>
+		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value=""><?php echo esc_attr(__('Select Month')); ?></option> <?php wp_get_archives(apply_filters('widget_archives_dropdown_args', array('type' => 'monthly', 'format' => 'option', 'show_post_count' => $c))); ?> </select>
+<?php
+		} else {
+?>
+		<ul>
+		<?php wp_get_archives(apply_filters('widget_archives_args', array('type' => 'monthly', 'show_post_count' => $c))); ?>
+		</ul>
+<?php
+		}
+		
+iii) In Recent Posts widget, changed line 570 ... changed to add <h4></h4>:
+	function widget($args, $instance) {
+		$cache = wp_cache_get('widget_recent_posts', 'widget');
+
+		if ( !is_array($cache) )
+			$cache = array();
+
+		if ( ! isset( $args['widget_id'] ) )
+			$args['widget_id'] = $this->id;
+
+		if ( isset( $cache[ $args['widget_id'] ] ) ) {
+			echo $cache[ $args['widget_id'] ];
+			return;
+		}
+
+		ob_start();
+		extract($args);
+
+		$title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Posts') : $instance['title'], $instance, $this->id_base);
+		if ( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
+ 			$number = 10;
+		$show_date = isset( $instance['show_date'] ) ? $instance['show_date'] : false;
+
+		$r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true ) ) );
+		if ($r->have_posts()) :
+?>
+		<?php echo $before_widget; ?>
+		<?php if ( $title ) echo $before_title . $title . $after_title; ?>
+		<ul>
+		<?php while ( $r->have_posts() ) : $r->the_post(); ?>
+			<li>
+				<a href="<?php the_permalink() ?>" title="<?php echo esc_attr( get_the_title() ? get_the_title() : get_the_ID() ); ?>"><?php if ( get_the_title() ) the_title(); else the_ID(); ?></a>
+			<?php if ( $show_date ) : ?>
+				<span class="post-date"><?php echo get_the_date(); ?></span>
+			<?php endif; ?>
+			</li>
+		<?php endwhile; ?>
+		</ul>
+		<?php echo $after_widget; ?>
+<?php
+		// Reset the global $the_post as this query will have stomped on it
+		wp_reset_postdata();
+
+		endif;
+
+		$cache[$args['widget_id']] = ob_get_flush();
+		wp_cache_set('widget_recent_posts', $cache, 'widget');
+	}
+
+to:
+	function widget($args, $instance) {
+		$cache = wp_cache_get('widget_recent_posts', 'widget');
+
+		if ( !is_array($cache) )
+			$cache = array();
+
+		if ( ! isset( $args['widget_id'] ) )
+			$args['widget_id'] = $this->id;
+
+		if ( isset( $cache[ $args['widget_id'] ] ) ) {
+			echo $cache[ $args['widget_id'] ];
+			return;
+		}
+
+		ob_start();
+		extract($args);
+
+		$title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Posts') : $instance['title'], $instance, $this->id_base);
+		if ( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
+ 			$number = 10;
+		$show_date = isset( $instance['show_date'] ) ? $instance['show_date'] : false;
+
+		$r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true ) ) );
+		if ($r->have_posts()) :
+?>
+		<?php echo $before_widget; ?>
+		<h4><?php if ( $title ) echo $before_title . $title . $after_title; ?></h4>
+		<ul>
+		<?php while ( $r->have_posts() ) : $r->the_post(); ?>
+			<li>
+				<a href="<?php the_permalink() ?>" title="<?php echo esc_attr( get_the_title() ? get_the_title() : get_the_ID() ); ?>"><?php if ( get_the_title() ) the_title(); else the_ID(); ?></a>
+			<?php if ( $show_date ) : ?>
+				<span class="post-date"><?php echo get_the_date(); ?></span>
+			<?php endif; ?>
+			</li>
+		<?php endwhile; ?>
+		</ul>
+		<?php echo $after_widget; ?>
+<?php
+		// Reset the global $the_post as this query will have stomped on it
+		wp_reset_postdata();
+
+		endif;
+
+		$cache[$args['widget_id']] = ob_get_flush();
+		wp_cache_set('widget_recent_posts', $cache, 'widget');
+	}
+
+
+
+2) Custom CSS 
+
+a) Custom CSS for each Season Results Page:
+
+tr:nth-child(1) td {background-color:gray ! important;}
+
+b) Custom CSS for the whole site:
+
+#header-container{
+background-image:url('http://www.blindcitizens.org/renegades/wp-content/uploads/2013/02/header_image.jpg');
+background-image:height:200 px;
+}
+body {
+background-image:url('http://www.blindcitizens.org/renegades/wp-content/uploads/2013/02/backgroundImage360x360_feather.png');
+background-position:70% 66%;
+background-repeat:repeat-x;background-attachment:fixed
+}
+.pdm-totals-row td {background-color:lightgray ! important;}
+.pdm-renegades-color{color:#000080;}
+strong {color:#000080;}
+
+h2 {font-size:150%; color:#000080;}
+h3 {font-size:125%; color:#000080;}
+h4 {font-size:100%;}
