@@ -1,0 +1,145 @@
+@media screen and (max-width: 840px) {
+    #wrapper,
+    .hybrid {
+        width: 100%
+    }
+
+    #np-slider-container {
+        width: 50%
+    }
+
+    #np-slider {
+        width: 100%
+    }
+
+    #np-slider .flexslider {
+        width: 100% !important
+    }
+
+    #np-tiles {
+        width: 50%
+    }
+
+    #np-tiles .twocol-one {
+        width: 100%;
+    }
+
+    #np-tiles img {
+        width: 100% !important
+    }
+
+    #np-tiles .entry-title {
+        padding: 5px 2%;
+        margin-right: 20px
+    }
+
+    #np-tabs-container {
+        width: auto;
+        overflow: hidden;
+        float: left;
+        width: 80%
+    }
+
+    .np-tabs-large {
+        margin: 10px auto;
+        max-width: 100% !important
+    }
+
+    #np-sb {
+        display: none
+    }
+
+    #np-small-col-container {
+        width: 20%
+    }
+
+    .np-mags {
+        width: 33.33%
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .np-mags {
+        width: 50%
+    }
+
+    #np-small-col-container {
+        display: none
+    }
+
+    #np-tabs-container {
+        width: 100%
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    #np-slider-container {
+        width: auto;
+        margin: -20px 0 20px;
+        float: none
+    }
+
+    #np-slider-container .div-content {
+        padding: 0 !important
+    }
+
+    #np-tiles,
+    #np-tabs-container {
+        width: 100%
+    }
+
+    #np-tiles .twocol-one {
+        width: 50%;
+    }
+
+    #np-slider .flexslider {
+        padding-bottom: 20px;
+        width: 100% !important
+    }
+
+    #np-tabs .tab_titles {
+        display: block;
+        width: 100%;
+    }
+
+    #np-tabs .nav-tab {
+        width: 33%;
+        text-align: center
+    }
+
+    #np-tabs .nav-tab a {
+        text-align: center;
+        width: 100%
+    }
+
+    .np-mags {
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #np-slider-container,
+    #np-tiles,
+    #np-tabs,
+    #np-sb,
+    #np-small-col-container,
+    .np-mags {
+        width: auto
+    }
+
+    #np-tabs .tab_titles {
+        display: block;
+        width: 100%;
+    }
+
+    #np-tabs .nav-tab {
+        width: 50%;
+        text-align: center
+    }
+
+    #np-tabs .nav-tab a {
+        text-align: center;
+        width: 100%
+    }
+}

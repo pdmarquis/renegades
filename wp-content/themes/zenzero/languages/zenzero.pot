@@ -1,0 +1,582 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zenzero\n"
+"POT-Creation-Date: 2017-02-10 18:01+0100\n"
+"PO-Revision-Date: 2017-02-10 18:01+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:27
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:39
+msgid "Reply"
+msgstr ""
+
+#: comments.php:46
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:60
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:69
+msgid "Name *"
+msgstr ""
+
+#: comments.php:70
+msgid "Email *"
+msgstr ""
+
+#: comments.php:71
+msgid "Website"
+msgstr ""
+
+#: comments.php:73
+msgid " Required fields are marked "
+msgstr ""
+
+#: comments.php:77
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:78
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:79
+msgid "Your email address will not be published."
+msgstr ""
+
+#: comments.php:80
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:81
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:82
+msgid "Cancel reply"
+msgstr ""
+
+#: comments.php:83
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:84
+msgid "Comment *"
+msgstr ""
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:26
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:35 content-search.php:35 content.php:31
+#: inc/template-tags.php:122
+msgid "Edit"
+msgstr ""
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:15
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:17
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: footer.php:34 header.php:53
+msgid "Facebook"
+msgstr ""
+
+#: footer.php:37 header.php:56
+msgid "Twitter"
+msgstr ""
+
+#: footer.php:40 header.php:59
+msgid "Google Plus"
+msgstr ""
+
+#: footer.php:43 header.php:62
+msgid "Linkedin"
+msgstr ""
+
+#: footer.php:46 header.php:65
+msgid "Instagram"
+msgstr ""
+
+#: footer.php:49 header.php:68
+msgid "YouTube"
+msgstr ""
+
+#: footer.php:52 header.php:71
+msgid "Pinterest"
+msgstr ""
+
+#: footer.php:55 header.php:74
+msgid "Tumblr"
+msgstr ""
+
+#: footer.php:58 header.php:77
+msgid "VK"
+msgstr ""
+
+#: footer.php:61 header.php:80
+msgid "RSS"
+msgstr ""
+
+#: footer.php:74
+msgid "Type here and hit enter..."
+msgstr ""
+
+#: footer.php:76
+msgid "Close"
+msgstr ""
+
+#: functions.php:54
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:81
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:86
+msgid "Main Menu"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:36 inc/admin/zenzero-admin-page.php:110
+msgid "About"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:73
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:77
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:91
+msgid "Dismiss"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:92
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing Zenzero! To fully take advantage of the best "
+"our theme can offer please make sure you visit our %swelcome page%s."
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:94
+msgid "Get started with Zenzero"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:117
+msgid "Theme Info"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:119
+msgid "View Demo"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:121
+msgid "View PRO version Demo"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:123
+msgid "Rate this theme"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:138
+msgid "Free Vs PRO"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:141
+msgid "Changelog"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:175
+msgid "Theme Customizer"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:176
+msgid "All Theme Options are available via Customize screen."
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:177
+msgid "Customize"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:181
+msgid "Got theme support question?"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:182
+msgid "Please put it in our support forum."
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:183
+msgid "Support"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:187
+msgid "Need more features?"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:188 inc/admin/zenzero-admin-page.php:287
+msgid "Upgrade to PRO version for more exciting features."
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:189
+msgid "Info about PRO version"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:195 inc/admin/zenzero-admin-page.php:203
+msgid "Translate"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:199
+msgid "Click below to translate this theme into your own language."
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:215
+msgid "Return to Updates"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:215
+msgid "Return to Dashboard &rarr; Updates"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:218
+msgid "Go to Dashboard &rarr; Home"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:218
+msgid "Go to Dashboard"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:235
+msgid "View changelog below:"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:292
+msgid "Features"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:293
+msgid "Zenzero"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:294
+msgid "Zenzero PRO"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:299
+msgid "Responsive Design"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:304
+msgid "Change Background"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:309
+msgid "Unlimited Text Color"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:314
+msgid "Choose Social Icons"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:319
+msgid "RTL Support"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:324
+msgid "Powerful theme options"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:329 inc/zenzero-dynamic.php:234
+msgid "Loading Page"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:334
+msgid "Font switcher"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:339 inc/zenzero-dynamic.php:238
+msgid "Breadcrumb"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:344 inc/zenzero-dynamic.php:237
+msgid "Post views counter"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:349 inc/zenzero-dynamic.php:240
+msgid "7 Shortcodes"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:354 inc/zenzero-dynamic.php:241
+msgid "5 Exclusive Widgets"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:359 inc/zenzero-dynamic.php:242
+msgid "Related Posts Box"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:364 inc/zenzero-dynamic.php:243
+msgid "Information About Author Box"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:369
+msgid "6 Post format"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:377
+msgid "View PRO version demo"
+msgstr ""
+
+#: inc/admin/zenzero-admin-page.php:378
+msgid "More Information"
+msgstr ""
+
+#: inc/pro-button/class-customize.php:77
+msgid "Zenzero PRO Theme"
+msgstr ""
+
+#: inc/pro-button/class-customize.php:78
+msgid "More Info"
+msgstr ""
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:55
+msgid "Previous Post"
+msgstr ""
+
+#: inc/template-tags.php:55
+msgid "Previous post link"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "Next Post"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "Next Post link"
+msgstr ""
+
+#: inc/template-tags.php:82
+#, php-format
+msgctxt "post date"
+msgid "<i class=\"fa fa-clock-o spaceLeftRight\" aria-hidden=\"true\"></i>%s"
+msgstr ""
+
+#: inc/template-tags.php:87
+#, php-format
+msgctxt "post author"
+msgid "<i class=\"fa fa-user spaceLeftRight\" aria-hidden=\"true\"></i>%s"
+msgstr ""
+
+#: inc/template-tags.php:96 inc/template-tags.php:118
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: inc/template-tags.php:102
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:102
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:102
+msgid "% Comments"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:34
+msgid "Box Text Color"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:40
+msgid "Box Background Color"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:46
+msgid "Header / Footer / Sidebar Background Color"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:52
+msgid "Header / Footer / Sidebar Text Color"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:82
+msgid "Zenzero Theme Options"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:95
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:100
+msgid "Twitter URL"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:105
+msgid "Google Plus URL"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:110
+msgid "Linkedin URL"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:115
+msgid "Instagram URL"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:120
+msgid "YouTube URL"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:125
+msgid "Pinterest URL"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:130
+msgid "Tumblr URL"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:135
+msgid "VK URL"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:170
+msgid "Show RSS Button"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:188
+msgid "Show Search Button"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:206
+msgid "Show Social Button in the header"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:220
+msgid "Get Zenzero PRO WP Theme for only"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:225
+msgid "Watch the demo"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:228
+msgid "Get Zenzero PRO Theme"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:232
+msgid "Advanced Theme Options"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:233
+msgid "Logo Upload"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:235
+msgid "Font Switcher"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:236
+msgid "Unlimited Colors and Skin"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:239
+msgid "Post format"
+msgstr ""
+
+#: inc/zenzero-dynamic.php:244
+msgid "And much more..."
+msgstr ""
+
+#: inc/zenzero-dynamic.php:250
+msgid "More features? Upgrade to PRO"
+msgstr ""
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""

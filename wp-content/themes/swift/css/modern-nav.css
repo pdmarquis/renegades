@@ -1,0 +1,141 @@
+#above-logo-container, #below-logo-container {
+    background: #f7f7f7;
+    border: solid 1px #D4D4D4;
+}
+
+#above-logo-container,
+.menu-ad-container {
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-width: 0;
+    margin: auto;
+}
+
+#below-logo-container {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.sw_nav {
+    float: left;
+    margin-left: 10px;
+}
+
+.sw_nav a {
+    text-transform: uppercase;
+    color: #777;
+}
+
+.sw_nav li {
+    position: relative;
+    float: left;
+    display: inline;
+}
+
+.sw_nav li a {
+    display: inline-block;
+    padding: .8em;
+    text-decoration: none;
+    border-right: solid 1px #D4d4d4
+}
+
+.sw_nav li li a {
+    display: block;
+}
+
+.sw_nav li a:hover, .sw_nav li.current-menu-item a {
+    background: #e1e1e1;
+    color: #555;
+    border-width: 0 1px;
+}
+
+.sw_nav li:hover a {
+    background: #e1e1e1;
+    border-color: #CCC;
+}
+
+.sw_nav li:hover ul a {
+    border: none;
+}
+
+#rss-links li a {
+    padding: .49231em 0 !important;
+}
+
+.sw_nav li a.add-arrow:before, .sw_nav li ul li a.add-arrow-right:before {
+    content: "\f103";
+    font-family: FontAwesome;
+    float: right;
+    margin-left: 6px;
+}
+
+.sw_nav li ul li a.add-arrow-right:before {
+    content: "\f101";
+}
+
+/* sub.sw_navigation */
+.sw_nav ul {
+    display: none;
+    border: solid 1px #D4D4D4;
+    border-width: 0 1px 1px;
+    margin-top: -1px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+    padding-bottom: 5px;
+}
+
+.sw_nav li:hover ul, .sw_nav li:hover ul li:hover ul {
+    display: block;
+    width: 160px;
+    position: absolute;
+    top: 3.225em;
+    width: 180px;
+    z-index: 999;
+}
+
+.sw_nav > li ul {
+    left: -1px;
+}
+
+.sw_nav li ul, .sw_nav li ul li ul {
+    background: #e1e1e1;
+}
+
+.sw_nav ul a, .sw_nav ul li {
+    float: none;
+}
+
+.sw_nav ul li a:hover {
+    background: #CCC;
+}
+
+/* Third Level Drop Down Menu */
+.sw_nav li:hover ul li ul {
+    display: none;
+}
+
+.sw_nav li:hover ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 180px;
+    top: -1.3125em !important;
+    float: left;
+}
+
+/* .8125 +(.5[]padding]) */
+/* Fourth level */
+.sw_nav li:hover ul li ul li ul {
+    display: none !important;
+}
+
+.sw_nav li:hover ul li ul li:hover ul {
+    display: block !important;
+}

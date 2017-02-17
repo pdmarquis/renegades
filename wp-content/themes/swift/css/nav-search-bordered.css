@@ -1,0 +1,48 @@
+#below-logo .after {
+    display: none
+}
+
+#navsearch {
+    float: right;
+    font-size: 1em;
+    line-height: 1em;
+    width: auto;
+    margin-right: 10px;
+    padding: 0
+}
+
+#navsearch form {
+    padding: 0
+}
+
+#navsearch input[type=text] {
+    font-size: 1em;
+    padding: .25em 1.8em .25em .25em;
+    font-style: italic;
+    font-family: georgia, serif;
+    color: #999;
+    width: 15.5em;
+    margin: .3125em 0 !important;
+    border: none;
+    border: solid 1px #CCC;
+    height: 2em;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+#navsearch input[type=submit] {
+    width: auto;
+    cursor: pointer;
+    padding: .3em;
+    margin: 0 0 0 6px !important;
+    float: right
+}
+
+#navsearch .fa-search {
+    position: absolute;
+    right: 6px;
+    top: .4em;
+    font-size: 1.5em;
+    opacity: .5;
+}

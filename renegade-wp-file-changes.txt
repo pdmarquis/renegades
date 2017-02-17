@@ -27,7 +27,7 @@ to
 This fixed page width problems on mobile devices
 
 b) /renegades/wp-content/themes/swift-basic/sidebar.php
-change line 4 to add complimentary role... changed:
+change line 6 to add complimentary role... changed:
 <?php
 GLOBAL $swift_design_options;
 if( isset( $swift_design_options['sb_position'] ) && $swift_design_options['sb_position'] != 'centered' ):

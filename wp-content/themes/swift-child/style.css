@@ -1,0 +1,104 @@
+/*
+ Theme Name:   Swift Child
+ Theme URI:    http://example.com/swift-child/
+ Description:  Swift Child Theme
+ Author:       Patrick Marquis
+ Author URI:   http://example.com
+ Template:     swift
+ Version:      1.0.0
+ Tags:         blue, brown, white, orange, light, custom-colors, custom-header, theme-options, fixed-width, two-columns, three-columns, left-sidebar, right-sidebar, threaded-comments, sticky-post, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+ Text Domain:  swift-child
+*/
+
+#header-container {
+    background-image:url('http://www.blindcitizens.org/renegades/wp-content/uploads/2013/02/header_image.jpg');
+    height: 200px;
+    background-color: #fff;
+}
+
+.xdebug-var-dump {
+    background-color: #fff;
+}
+
+body {
+    background-image:url('http://renegades.dev/wp-content/uploads/2013/02/backgroundImage360x360_feather.png');
+    background-position:70% 66%;
+    background-repeat:repeat-x;
+    background-attachment:fixed
+}
+
+.pdm-totals-row td {
+    background-color:lightgray !important;
+}
+
+.pdm-renegades-color {
+    color:#000080;
+}
+
+strong {
+    color:#000080;
+}
+
+h2 {
+    font-size:150%; 
+    color:#000080;
+}
+
+h3 {
+    font-size:125%; 
+    color:#000080;
+}
+
+h4 {
+    font-size:100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+.side-menu {
+    background-color: #005FA1;
+    color: #FFFFFF !important; 
+    text-align: center; 
+    text-shadow: 0px 0px 3px #000080;
+    border: 2px solid #000080; 
+    width: 184px; 
+    height: 40px; 
+    margin: 0px 0px 3px 0px;
+    display: block;
+}
+
+.side-menu:hover {
+    border: 2px solid #FF0000; 
+}
+
+/*The following fixes issue where featured blog image streches.  Also needed to make blog thumbnails 300x300 in Swift Options */
+.blog-thumb{height:auto;}
+
+/*The following removes the scroll to top and bottom arrows*/
+#scroll{display:none;}
+
+/*make the search button the Renegades color*/
+#searchform .btn-info {
+    background-color: #005FA1;
+    border-color: #000080;
+}
+
+#text-2 a {
+    width: 100%;
+}
+
+#text-2 div a {
+    width: 100%;
+}
+
+#text-2 .ren-signup-btn {
+    display: flex;
+    align-items: center;
+}
+

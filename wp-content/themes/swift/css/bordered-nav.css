@@ -1,0 +1,131 @@
+
+#above-logo-container {
+    border-bottom: solid 4px #CCC
+}
+
+#below-logo-container {
+    border: solid #CCC;
+    border-width: 4px 0 1px;
+}
+
+.sw_nav {
+    float: left
+}
+
+.sw_nav a {
+    text-transform: uppercase;
+    color: #000;
+    border-right: solid 1px #CCC
+}
+
+.sw_nav li {
+    position: relative;
+    float: left;
+    display: inline;
+}
+
+.sw_nav li a {
+    display: inline-block;
+    padding: .5em;
+    text-decoration: none;
+    border: solid 1px #FFF;
+    border-width: 0 1px
+}
+
+.sw_nav li li a {
+    display: block
+}
+
+.sw_nav li a:hover,
+.sw_nav li.current-menu-item a {
+    background: #EEE;
+    border-color: #CCC;
+    border-width: 0 1px
+}
+
+.sw_nav li:hover a {
+    background: #EEE;
+    border-color: #CCC
+}
+
+.sw_nav li:hover ul a {
+    border: none;
+}
+
+#rss-links li a {
+    padding: .3077em 0 !important;
+}
+
+.sw_nav li a.add-arrow:before,
+.sw_nav li ul li a.add-arrow-right:before {
+    content: "\f103";
+    font-family: FontAwesome;
+    float: right;
+    margin-left: 6px;
+}
+
+.sw_nav li ul li a.add-arrow-right:before {
+    content: "\f101";
+}
+
+/* sub.sw_navigation */
+.sw_nav ul {
+    display: none;
+    border: solid 1px #CCC;
+    border-width: 0 1px 1px;
+    margin-top: -1px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+    padding-bottom: 5px;
+}
+
+.sw_nav li:hover ul,
+.sw_nav li:hover ul li:hover ul {
+    display: block;
+    background: #EEE;
+    width: 160px;
+    position: absolute;
+    top: 2.625em;
+    width: 180px;
+    z-index: 999
+}
+
+.sw_nav li ul,
+.sw_nav li ul li ul {
+    background: #EEE;
+}
+
+.sw_nav ul a, .sw_nav ul li {
+    float: none;
+}
+
+.sw_nav ul li a:hover {
+    background: #CCC;
+}
+
+/* Third Level Drop Down Menu */
+
+.sw_nav li:hover ul li ul {
+    display: none;
+}
+
+.sw_nav li:hover ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 180px;
+    top: -1.3125em !important;
+    float: left
+}
+
+/* .8125 +(.5[]padding]) */
+/* Fourth level */
+.sw_nav li:hover ul li ul li ul {
+    display: none !important;
+}
+
+.sw_nav li:hover ul li ul li:hover ul {
+    display: block !important;
+}
+   

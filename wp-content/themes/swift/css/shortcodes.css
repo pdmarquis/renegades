@@ -1,0 +1,969 @@
+/*-----------------------------------------------------------------------------------
+
+TABLE OF CONTENTS:
+
+1. Info Boxes
+2. Buttons
+3. Columns
+4. Tweetmeme
+5. Twitter
+6. Digg
+7. Related Posts
+8. Horizontal Rule
+9. Quote
+10. Icon Links
+11. Facebook
+12. Contact Form
+13. Tabber
+-13.1 Tabber Alternate Style - Boxed
+-13.2 Tabber Alternate Style - Vertical
+14. Dropcap
+15. Content Toggle
+-15.1 Toggle Alternate Style - White
+16. Highlight and Abbreviation
+17. List Styles - Unordered List
+18. List Styles - Ordered List
+19. Social Icon
+
+-----------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------*/
+/* 1. Info Boxes */
+/*-------------------------------------------------------------------------------------------*/
+.alert:before {
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    margin-right: 12px;
+    margin-bottom: -.25em
+}
+
+.alert.medium:before {
+    margin-right: 16px
+}
+
+.alert.large:before {
+    margin-right: 23px
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.alert .alert-link {
+    font-weight: bold;
+}
+
+.alert > p,
+.alert > ul {
+    margin-bottom: 0;
+}
+
+.alert > p + p {
+    margin-top: 5px;
+}
+
+.alert-dismissable {
+    padding-right: 35px;
+}
+
+.alert-dismissable .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.alert-success hr {
+    border-top-color: #c9e2b3;
+}
+
+.alert-success .alert-link {
+    color: #2b542c;
+}
+
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+
+.alert-info hr {
+    border-top-color: #a6e1ec;
+}
+
+.alert-info .alert-link {
+    color: #245269;
+}
+
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}
+
+.alert-warning hr {
+    border-top-color: #f7e1b5;
+}
+
+.alert-warning .alert-link {
+    color: #66512c;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+.alert-danger hr {
+    border-top-color: #e4b9c0;
+}
+
+.alert-danger .alert-link {
+    color: #843534;
+}
+
+/* Added by Satish */
+.alert {
+    background-repeat: no-repeat;
+    background-position: 14px 50%;
+}
+
+.alert.none {
+    border-width: 0;
+}
+
+.alert.full {
+    border-width: 1px;
+}
+
+.alert.medium {
+    padding: 18px 20px;
+    font-size: 1.1em;
+}
+
+.alert.large {
+    padding: 25px 27px;
+    font-size: 1.3em;
+}
+
+.alert.rounded {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/*
+.alert[class*='icon-'] {padding-left:54px }
+.alert.medium[class*='icon-'] {padding-left:66px;background-position:20px 50%; }
+.alert.large[class*='icon-'] {padding-left:80px;background-position:27px 50%; }
+*/
+/* Done */
+.swift-sc-box.rounded {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+p.swift-sc-box, div.swift-sc-box {
+    margin: 1em 0 1.5em 0;
+    padding: 9px 10px 9px 50px;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    color: #555;
+    text-shadow: none;
+}
+
+.swift-sc-box.none {
+    border-width: 0;
+}
+
+.swift-sc-box.full {
+    border-width: 1px;
+}
+
+.swift-sc-box.medium {
+    padding: 18px 20px 18px 50px;
+    font-size: 1.1em;
+}
+
+.swift-sc-box.large {
+    padding: 25px 27px 25px 50px;
+    font-size: 1.2em;
+}
+
+.swift-sc-box.rounded {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.swift-sc-box.alert {
+    border-color: #f0baa2;
+    background: #ffd9c8
+}
+
+.swift-sc-box.download {
+    border-color: #d4ebaf;
+    background: #edfcd5
+}
+
+.swift-sc-box.tick {
+    border-color: #d4ebaf;
+    background: #edfcd5
+}
+
+.swift-sc-box.info {
+    border-color: #ccc;
+    background: #eee
+}
+
+.swift-sc-box.note {
+    border-color: #efe3ae;
+    background: #fef6d2
+}
+
+.swift-sc-box.normal {
+    border-color: #ccc;
+    background: #eee;
+    padding: 9px 15px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 2. Buttons */
+/*-------------------------------------------------------------------------------------------*/
+/* Moved to Style.CSS
+/* end */
+/*-------------------------------------------------------------------------------------------*/
+/* 3. Columns */
+/*-------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------*/
+/* 4. Tweetmeme */
+/*-------------------------------------------------------------------------------------------*/
+.swift-tweetmeme.left {
+    margin: 0 1.5em 1.5em 0;
+    float: left;
+}
+
+.swift-tweetmeme.none {
+    margin: 0 0 1.5em 0;
+}
+
+.swift-tweetmeme.right {
+    margin: 0 0 1.5em 1.5em;
+    float: right;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 5. Twitter */
+/*-------------------------------------------------------------------------------------------*/
+.swift-sc-twitter.left {
+    margin: 0 1.5em 1.5em 0;
+    float: left;
+}
+
+.swift-sc-twitter.none {
+    margin: 0 0 1.5em 0;
+}
+
+.swift-sc-twitter.right {
+    margin: 0 0 1.5em 1.5em;
+    float: right;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 6. Digg */
+/*-------------------------------------------------------------------------------------------*/
+.swift-digg.left {
+    margin: 0 1.5em 1.5em 0;
+    float: left;
+}
+
+.swift-digg.none {
+    margin: 0 0 1.5em 0;
+}
+
+.swift-digg.right {
+    margin: 0 0 1.5em 1.5em;
+    float: right;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 7. Related posts */
+/*-------------------------------------------------------------------------------------------*/
+.swift-sc-related-posts .thumbnail {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.swift-sc-related-posts ul {
+    border: solid 1px #EEE;
+}
+
+.swift-sc-related-posts ul li {
+    list-style: none !important;
+    clear: both;
+    border-bottom: solid 1px #EEE;
+    padding: 5px;
+    margin-left: 0
+}
+
+.swift-sc-related-posts ul li:last-child {
+    border-bottom: none
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 8. Horizontal Rule */
+/*-------------------------------------------------------------------------------------------*/
+.swift-sc-hr {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.swift-sc-hr, .swift-sc-divider {
+    clear: both;
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.swift-sc-divider.flat {
+    padding: 0;
+    margin: 0;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 9. Quote */
+/*-------------------------------------------------------------------------------------------*/
+.swift-sc-quote p {
+    margin: 0 20px 1.3em;
+    padding-left: 48px;
+    font-family: serif;
+    font-size: 1.25em;
+    font-style: italic;
+    color: #777;
+    min-height: 32px;
+}
+
+.swift-sc-quote.left {
+    float: left;
+    width: 30%;
+}
+
+.swift-sc-quote.right {
+    float: right;
+    width: 30%;
+}
+
+.swift-sc-quote.boxed {
+    background: #f5f5f5;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.swift-sc-quote.boxed.left {
+    margin: 0 1.5em 1em 0;
+}
+
+.swift-sc-quote.boxed.right {
+    margin: 0 0 1em 1.5em;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 10. Icon Links */
+/*-------------------------------------------------------------------------------------------*/
+.swift-sc-ilink {
+    padding: 0 0.3em;
+}
+
+.swift-sc-ilink a {
+    padding-left: 40px;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.swift-sc-ilink a:hover {
+    text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 11. Facebook */
+/*-------------------------------------------------------------------------------------------*/
+.swift-fbshare.left {
+    margin: 0 1.5em 1.5em 0;
+    float: left;
+}
+
+.swift-fbshare.none {
+    margin: 0 0 1.5em 0;
+}
+
+.swift-fbshare.right {
+    margin: 0 0 1.5em 1.5em;
+    float: right;
+}
+
+.swift-fblike.left {
+    margin: 0 1.5em 1.5em 0;
+    float: left;
+}
+
+.swift-fblike.none {
+    margin: 0 0 1.5em 0;
+}
+
+.swift-fblike.right {
+    margin: 0 0 1.5em 1.5em;
+    float: right;
+}
+
+/* 12. Contact Form */
+/*-------------------------------------------------------------------------------------------*/
+#content fieldset.forms {
+    width: 96%;
+    padding: 10px 2% !important
+}
+
+.contact-form .screenReader {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+}
+
+.contact-form .forms {
+    float: left;
+    list-style: none;
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 20px !important;
+}
+
+.contact-form .forms p {
+    clear: both;
+    float: left;
+    margin-bottom: 1em;
+    position: relative;
+    display: block;
+    width: 100%
+}
+
+.contact-form .forms label {
+    cursor: pointer;
+    display: block;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.contact-form .forms input.txt {
+    width: 80% !important;
+    margin-top: -.5em;
+}
+
+.contact-form .forms input#sendCopy {
+    border: none;
+}
+
+.contact-form .forms textarea {
+    height: 240px;
+    width: 99%
+}
+
+.contact-form .forms .error {
+    font-size: 12px;
+    display: block;
+    margin-left: 120px;
+    color: red;
+}
+
+.contact-form .forms .textarea .error {
+    display: block;
+    margin-left: 120px
+}
+
+.contact-form .forms .screenReader {
+    margin-bottom: 0;
+}
+
+.contact-form .forms .buttons {
+    margin-top: -30px
+}
+
+.contact-form .forms .buttons .submit {
+    margin: 0 20px 0 0;
+    float: right;
+    cursor: pointer;
+}
+
+.contact-form .forms .inline input {
+    width: auto;
+    margin-left: 120px;
+}
+
+.contact-form .forms .inline label {
+    display: inline;
+    float: none;
+    width: auto;
+}
+
+.entry .contact-form ol.forms li {
+    list-style: none;
+}
+
+/* Added to accomodate the contact form shortcode */
+.contact-form .forms p.inline {
+    float: left
+}
+
+.contact-form .forms #sendCopy {
+    float: left;
+    margin: .4em 10px 0 0;
+    padding: 10px
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 13. Tabber */
+/*-------------------------------------------------------------------------------------------*/
+
+.shortcode-tabs {
+    background: #f0f0f0;
+    background: rgba(0, 0, 0, .05);
+    clear: both;
+    height: auto;
+    display: block;
+    padding: 5px;
+    margin-bottom: 30px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.shortcode-tabs ul.tab_titles {
+    padding: 0px;
+    background: none;
+    border: none;
+    margin: 0;
+}
+
+.shortcode-tabs ul.tab_titles li.nav-tab {
+    background: none;
+    padding: 0;
+    float: left;
+    display: inline;
+    color: #ffffff;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.shortcode-tabs ul.tab_titles li.nav-tab.ui-tabs-active a, .shortcode-tabs ul.tab_titles li.nav-tab a:hover {
+    background: #fff !important;
+    text-decoration: none;
+}
+
+.shortcode-tabs ul.tab_titles li.nav-tab a {
+    color: #777;
+    display: block;
+    float: left;
+    padding: 8px;
+    text-transform: uppercase;
+    font: 11px/18px sans-serif;
+}
+
+.shortcode-tabs ul.tab_titles li.nav-tab.ui-tabs-active a, .shortcode-tabs ul.tab_titles li.nav-tab a:hover {
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.shortcode-tabs .tab {
+    background: #fff;
+    padding: 10px;
+    text-align: left;
+    clear: both;
+}
+
+.shortcode-tabs .tab li.nav-tab {
+    background: #fff;
+}
+
+.shortcode-tabs .tab ul.tab_titles {
+    margin: 0;
+    border: 1px solid #e6e6e6;
+    border-width: 1px 0 1px 0;
+}
+
+.shortcode-tabs .tab li.nav-tab {
+    border: 1px solid #e6e6e6;
+    border-width: 0 1px 1px 1px;
+    padding: 10px;
+}
+
+.shortcode-tabs .tab li.nav-tab a {
+    color: #555;
+    font: bold 12px/18px sans-serif;
+}
+
+.shortcode-tabs .tab a:hover {
+}
+
+.shortcode-tabs .ui-tabs-hide {
+    display: none;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* -13.1 Tabber Alternate Style - Boxed */
+/*-------------------------------------------------------------------------------------------*/
+
+.shortcode-tabs.boxed {
+    background: #FFFFFF;
+}
+
+.shortcode-tabs.boxed ul.tab_titles {
+    clear: both;
+    float: left;
+    background: none;
+    border: none;
+    border-left: 1px solid #EBEBEB;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.shortcode-tabs.boxed ul.tab_titles li {
+    background: none;
+    padding: 0;
+    border-top: 1px solid #EBEBEB;
+    border-right: 1px solid #EBEBEB;
+    margin: 0 !important
+}
+
+.shortcode-tabs.boxed ul.tab_titles li.ui-state-active {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.shortcode-tabs.boxed .tab {
+    border: 1px solid #EBEBEB;
+    top: -2px;
+    position: relative;
+    z-index: 1;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* -13.2 Tabber Alternate Style - Vertical */
+/*-------------------------------------------------------------------------------------------*/
+.shortcode-tabs.vertical {
+    background: #FFF;
+    border: solid 5px #f0f0f0;
+    padding: 0
+}
+
+.shortcode-tabs.vertical .tab_header {
+    border: 1px solid #F0F0F0;
+    border-bottom: 0px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: auto;
+    max-width: 20%;
+    float: left;
+    margin-bottom: -5px;
+    color: #555;
+    font: bold 12px/18px sans-serif;
+}
+
+.shortcode-tabs.vertical .tab_header {
+
+    /* Gradient Background */
+    background: #f5f5f5;
+    background: -moz-linear-gradient(100% 100% 90deg, #f5f5f5, #fff);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f5f5f5));
+
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+
+}
+
+.shortcode-tabs.vertical .tab_header span {
+    display: block;
+    padding: 8px 8px 12px 8px;
+    border: 1px solid #EBEBEB;
+}
+
+.shortcode-tabs.vertical ul.tab_titles {
+    clear: left;
+    float: left;
+    background: #f0f0f0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 2;
+    width: auto;
+    padding: 0;
+    text-align: right
+}
+
+.shortcode-tabs.vertical ul.tab_titles.has_title {
+    border-top: 0px !important;
+    margin-top: 5px;
+}
+
+.shortcode-tabs.vertical ul.tab_titles.has_title {
+    -moz-border-radius: 0 !important
+}
+
+.shortcode-tabs.vertical ul.tab_titles li {
+    clear: both;
+    background: none;
+    padding: 0;
+    border-bottom: 1px solid #EBEBEB;
+    border-left: 0;
+    border-right: 0;
+    display: block !important;
+    float: none !important;
+    margin-left: 0 !important;
+    -moz-border-radius: 0 !important
+}
+
+.shortcode-tabs.vertical ul.tab_titles li.ui-state-active {
+}
+
+.shortcode-tabs.vertical ul.tab_titles li.ui-state-active a {
+    background: #fff;
+    background: #fff;;
+}
+
+.shortcode-tabs.vertical ul.tab_titles li a:link {
+    display: block;
+    float: none !important;
+}
+
+.shortcode-tabs.vertical ul.tab_titles li a:hover {
+    background: #F0F0F0;
+    background: rgba(0, 0, 0, .05);
+}
+
+.shortcode-tabs.vertical .tab {
+    clear: right !important;
+    top: 5px;
+    position: relative;
+    z-index: 1;
+    padding: 0px;
+    float: left;
+    padding: 0 10px
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 14. Dropcap */
+/*-------------------------------------------------------------------------------------------*/
+
+span.dropcap {
+    font-size: 300%;
+    font-weight: bold;
+    float: left;
+    position: relative;
+    margin: 5px 7px 0 0;
+    line-height: 0.7em;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 15. Content Toggle */
+/*-------------------------------------------------------------------------------------------*/
+
+.shortcode-toggle {
+    margin: 0 0 1.625em;
+}
+
+.shortcode-toggle h4 {
+    margin: 0;
+    padding: 0
+}
+
+.shortcode-toggle h4 a {
+    display: block;
+    padding: 3px 0 3px 10px;
+    background: #f3f3f3 url(../images/shortcode-toggle-close.png) no-repeat 99% center;
+}
+
+.shortcode-toggle.closed h4 a {
+    background-image: url(../images/shortcode-toggle-open.png);
+}
+
+.shortcode-toggle .toggle-content {
+    padding: 10px 10px;
+    background: #f9f9f9;
+}
+
+.shortcode-toggle.closed .toggle-content, .shortcode-toggle .more-text.closed {
+    display: none;
+}
+
+.shortcode-toggle .more-text.open {
+    display: block;
+}
+
+.shortcode-toggle.border {
+    border: 1px solid #EBEBEB;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* -15.1 Content Toggle Alternate Style - White */
+/*-------------------------------------------------------------------------------------------*/
+
+.shortcode-toggle.white h4 a {
+    background-color: #FFFFFF;
+}
+
+.shortcode-toggle.white .toggle-content {
+    background-color: #FFFFFF;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 16. Highlight and Abbreviation */
+/*-------------------------------------------------------------------------------------------*/
+
+span.shortcode-highlight {
+    background: #FFFFAA;
+    padding: 3px 3px 1px;
+}
+
+abbr {
+    border-bottom: 1px dashed #999999;
+    cursor: help;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 17. List Styles - Unordered List */
+/*-------------------------------------------------------------------------------------------*/
+
+.entry .shortcode-unorderedlist ul li, .shortcode-unorderedlist ul li, .entry .shortcode-unorderedlist ul li ul, .shortcode-unorderedlist ul li ul {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+/*IMAGES MOVED TO THE BOTTOM*/
+
+/*-------------------------------------------------------------------------------------------*/
+/* 17. List Styles - Unordered List */
+/*-------------------------------------------------------------------------------------------*/
+
+.entry .shortcode-unorderedlist ul li, .shortcode-unorderedlist ul li, .entry .shortcode-unorderedlist ul li ul, .shortcode-unorderedlist ul li ul {
+    list-style-type: none;
+}
+
+.shortcode-unorderedlist li:before {
+    font-family: FontAwesome;
+    margin: 0 .5em 0 -1.5em
+}
+
+.shortcode-unorderedlist.tick li:before {
+    content: "\f058";
+    color: #4bb463;
+}
+
+.shortcode-unorderedlist.star li:before {
+    content: "\f005";
+    color: #edcc00;
+}
+
+.shortcode-unorderedlist.red-x li:before {
+    content: "\f00d";
+    color: #ff3a2f;
+}
+
+.shortcode-unorderedlist.bullet li:before {
+    content: "\f0da";
+}
+
+.shortcode-unorderedlist.green-dot li:before {
+    content: "\f111";
+    color: #079f2a;
+}
+
+.shortcode-unorderedlist.arrow li:before {
+    content: "\f0a9";
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 18. List Styles - Ordered List */
+/*-------------------------------------------------------------------------------------------*/
+
+.entry .shortcode-orderedlist ol li, .entry .shortcode-orderedlist ol li ol, .shortcode-orderedlist ol li {
+    list-style-type: none;
+    margin-left: 25px;
+}
+
+.entry .shortcode-orderedlist.armenian ol li, .shortcode-orderedlist.armenian ol li {
+    list-style-type: armenian;
+}
+
+.entry .shortcode-orderedlist.decimal ol li, .shortcode-orderedlist.decimal ol li {
+    list-style-type: decimal;
+}
+
+.entry .shortcode-orderedlist.decimal-leading-zero ol li, .shortcode-orderedlist.decimal-leading-zero ol li {
+    list-style-type: decimal-leading-zero;
+}
+
+.entry .shortcode-orderedlist.georgian ol li, .shortcode-orderedlist.georgian ol li {
+    list-style-type: georgian;
+}
+
+.entry .shortcode-orderedlist.lower-alpha ol li, .shortcode-orderedlist.lower-alpha ol li {
+    list-style-type: lower-alpha;
+}
+
+.entry .shortcode-orderedlist.lower-greek ol li, .shortcode-orderedlist.lower-greek ol li {
+    list-style-type: lower-greek;
+}
+
+.entry .shortcode-orderedlist.lower-latin ol li, .shortcode-orderedlist.lower-latin ol li {
+    list-style-type: lower-latin;
+}
+
+.entry .shortcode-orderedlist.lower-roman ol li, .shortcode-orderedlist.lower-roman ol li {
+    list-style-type: lower-roman;
+}
+
+.entry .shortcode-orderedlist.upper-alpha ol li, .shortcode-orderedlist.upper-alpha ol li {
+    list-style-type: upper-alpha;
+}
+
+.entry .shortcode-orderedlist.upper-latin ol li, .shortcode-orderedlist.upper-latin ol li {
+    list-style-type: upper-latin;
+}
+
+.entry .shortcode-orderedlist.upper-roman ol li, .shortcode-orderedlist.upper-roman ol li {
+    list-style-type: upper-roman;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 19. Social Icon */
+/*-------------------------------------------------------------------------------------------*/
+
+img.social-icon {
+    border: none;
+}

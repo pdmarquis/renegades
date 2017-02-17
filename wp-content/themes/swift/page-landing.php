@@ -1,0 +1,37 @@
+<?php
+/*
+ Template Name: Landing Page
+*/
+
+$content_width = $swift_design_options['wrapper_width'] - 4 * $swift_design_options['airy'];
+
+get_header('stripped');
+
+?>
+
+    <div id="content" class="full-width" role="main">
+        <div class="div-content">
+
+            <?php while (have_posts()) : the_post(); ?>
+
+
+                <?php get_template_part('display/post', 'page'); ?>
+
+                <?php //swift_content_nav( 'nav-below' ); ?>
+
+                <?php comments_template('', true); ?>
+
+            <?php endwhile; // end of the loop. ?>
+
+        </div>
+        <!-- #content -->
+    </div>
+    <!-- #primary -->
+
+
+    </div>
+    <!-- left -->
+    </div>
+    <!-- main -->
+<?php //get_sidebar(); ?>
+<?php get_footer(); ?>
