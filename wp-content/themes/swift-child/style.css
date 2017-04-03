@@ -10,12 +10,7 @@
  Text Domain:  swift-child
 */
 
-#header-container {
-    background-image:url('http://www.blindcitizens.org/renegades/wp-content/uploads/2013/02/header_image.jpg');
-    height: 200px;
-    background-color: #fff;
-}
-
+/*make debug area white so the errors can be seen*/
 .xdebug-var-dump {
     background-color: #fff;
 }
@@ -27,6 +22,7 @@ body {
     background-attachment:fixed
 }
 
+/******Box score Styles******/
 .pdm-totals-row td {
     background-color:lightgray !important;
 }
@@ -80,8 +76,11 @@ a:hover {
 /*The following fixes issue where featured blog image streches.  Also needed to make blog thumbnails 300x300 in Swift Options */
 .blog-thumb{height:auto;}
 
-/*The following removes the scroll to top and bottom arrows*/
-#scroll{display:none;}
+#header-container {
+    background-image:url('http://www.blindcitizens.org/renegades/wp-content/uploads/2013/02/header_image.jpg');
+    height: 200px;
+    background-color: #fff;
+}
 
 /*make the search button the Renegades color*/
 #searchform .btn-info {
@@ -89,6 +88,8 @@ a:hover {
     border-color: #000080;
 }
 
+/****** sidebar wiget 2 styles ******/
+/*donate button*/
 #text-2 a {
     width: 100%;
 }
@@ -97,8 +98,61 @@ a:hover {
     width: 100%;
 }
 
-#text-2 .ren-signup-btn {
+/*signup button*/
+#text-2 .ren-signup-btn a {
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+/*ABC button*/
+#text-2 .abc-btn {
+    border: 2px solid #000;
+    width: 100%;
+}
+
+#text-2 .abc-btn:hover {
+    border: 2px solid #ff0000;
+    width: 100%;
+}
+
+#text-2 .abc-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******footer styles******/
+#copyright-container .pdm-footer-link {
+    text-align: center;
+}
+
+#copyright-container .pdm-footer-link a {
+    color: #005FA1;
+}
+
+#copyright-container .pdm-footer-link a:hover {
+    color: #000080;
+}
+
+/*removes the scroll to top and bottom arrow buttons that are avaialble on mobile screens*/
+#scroll {
+    display: none !important;
+}
+
+@media all and (max-width: 450px) {
+    body {
+        background-image: none;
+    }
+    #header-container {
+        background-image: none;
+        background-color: #000080;
+    }
+    
+    #logo-wrapper a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
